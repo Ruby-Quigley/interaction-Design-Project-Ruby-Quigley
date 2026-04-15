@@ -1,15 +1,68 @@
-<html> 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu Example</title>
+    <style>
+        /* Reset default margins and paddings */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-  <head> 
+        /* Navigation bar container */
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
 
-    <title>My Web Page</title> 
+        /* Navigation links */
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
 
-  </head> 
+        /* Hover effect */
+        nav a:hover {
+            background-color: #575757;
+        }
 
-  <body> 
+        /* Active link style */
+        nav a.active {
+            background-color: #04AA6D;
+        }
 
-  <h1>Hello!</h1> 
+        /* Responsive: stack links vertically on small screens */
+        @media screen and (max-width: 600px) {
+            nav a {
+                float: none;
+                width: 100%;
+                text-align: left;
+                padding-left: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
 
-  </body> 
+    <!-- Navigation Menu -->
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-</html> 
+    <!-- Page Content -->
+    <div style="padding:20px;">
+        <h1>Welcome</h1>
+        <p>This is a sample page with a navigation menu.</p>
+    </div>
+
+</body>
+</html>
