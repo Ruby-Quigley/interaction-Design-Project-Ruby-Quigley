@@ -1,66 +1,115 @@
-<meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Navigation Menu Example</title>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Project Website</title>
+
     <style>
-         {
+        body {
             margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+            font-family: Arial;
         }
 
-        
-        nav {
-            background-color: #696969;
-            overflow: hidden;
+        /* menu bar */
+        .menu {
+            background-color: #555;
+            padding: 10px;
         }
 
-        /* Navigation links */
-        nav a {
-            float: left;
-            display: block;
+        .menu button {
+            background-color: #777;
             color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-            font-size: 17px;
-            transition: background-color 0.3s;
-        }
-        
-        nav a:hover {
-            background-color: #575757;
+            border: none;
+            padding: 10px 15px;
+            margin-right: 5px;
+            cursor: pointer;
         }
 
-        nav a.active {
-            background-color: #04AA6D;
+        .menu button:hover {
+            background-color: #333;
         }
 
-        
-        @media screen and (max-width: 600px) {
-            nav a {
-                float: none;
-                width: 100%;
-                text-align: left;
-                padding-left: 20px;
-            }
+        /* hide pages */
+        .page {
+            display: none;
+            padding: 20px;
+        }
+
+        /* home page shown first */
+        #home {
+            display: block;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <nav>
-        <a href="#home" class="active">Home</a>
-        <a href="#week1">Week 1</a>
-        <a href="#week2">Week 2</a>
-        <a href="#week3">Week 3</a>
-        <a href="#week4">Week 4</a>
-    </nav>
-
-    <!-- Page Content -->
-    <div style="padding:20px;">
-        <h1>Welcome</h1>
-        <p>This is my navigation menu for Week 1.</p>
+    <div class="menu">
+        <button onclick="showPage('home')">Home</button>
+        <button onclick="showPage('intro')">Introduction</button>
+        <button onclick="showPage('analysis')">User and Task Analysis</button>
+        <button onclick="showPage('evaluation')">Interface Evaluation</button>
+        <button onclick="showPage('design')">Design Proposals</button>
+        <button onclick="showPage('proto')">Prototype</button>
+        <button onclick="showPage('test')">User Tests</button>
+        <button onclick="showPage('reflect')">Reflections</button>
     </div>
+
+    <!-- Pages -->
+    <div id="home" class="page">
+        <h1>Home</h1>
+        <p>Welcome to my project website.</p>
+    </div>
+
+    <div id="intro" class="page">
+        <h1>Introduction</h1>
+        <p>This is the introduction page.</p>
+    </div>
+
+    <div id="analysis" class="page">
+        <h1>User and Task Analysis</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <div id="evaluation" class="page">
+        <h1>Interface Evaluation</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <div id="design" class="page">
+        <h1>Design Proposals</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <div id="proto" class="page">
+        <h1>Prototype</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <div id="test" class="page">
+        <h1>User Tests</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <div id="reflect" class="page">
+        <h1>Reflections</h1>
+        <p>Information goes here.</p>
+    </div>
+
+    <script>
+        function showPage(pageName) {
+            // hide all pages
+            document.getElementById("home").style.display = "none";
+            document.getElementById("intro").style.display = "none";
+            document.getElementById("analysis").style.display = "none";
+            document.getElementById("evaluation").style.display = "none";
+            document.getElementById("design").style.display = "none";
+            document.getElementById("proto").style.display = "none";
+            document.getElementById("test").style.display = "none";
+            document.getElementById("reflect").style.display = "none";
+
+            // show the page we want
+            document.getElementById(pageName).style.display = "block";
+        }
+    </script>
 
 </body>
 </html>
