@@ -1,308 +1,319 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" type="text/css" href="./style.css"  />  
-<head>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+
     <title>My Project Website</title>
 
     <style>
-        body {
-            margin: 0;
-            font-family: Arial;
-        }
+      body {
+          margin: 0;
+          font-family: Arial;
+      }
 
-        /* menu bar */
-        .menu {
-            background-color: #555;
-            padding: 10px;
-        }
+      /* menu bar */
+      .menu {
+          background-color: #555;
+          padding: 10px;
+      }
 
-        .menu button {
-            background-color: #777;
-            color: white;
-            border: none;
-            padding: 10px 15px;
-            margin-right: 5px;
-            cursor: pointer;
-        }
+      .menu button {
+          background-color: #777;
+          color: white;
+          border: none;
+          padding: 10px 15px;
+          margin-right: 5px;
+          cursor: pointer;
+      }
 
-        .menu button:hover {
-            background-color: #333;
-        }
+      .menu button:hover {
+          background-color: #333;
+      }
 
-        /* hide pages */
-        .page {
-            display: none;
-            padding: 20px;
-        }
+      /* hide pages */
+      .page {
+          display: none;
+          padding: 20px;
+      }
 
-        /* home page shown first */
-        #home {
-            display: block;
-        }
-        #intro p {
-            font-family: "Georgia", serif;
-            font-size: 18px;
-            line-height: 1.6;
+      /* home page shown first */
+      #home {
+          display: block;
+      }
+      #intro p {
+          font-family: "Georgia", serif;
+          font-size: 18px;
+          line-height: 1.6;
     </style>
-</head>
-<body>
-
+  </head>
+  <body>
     <div class="menu">
-        <button onclick="showPage('home')">Home</button>
-        <button onclick="showPage('intro')">Introduction</button>
-        <button onclick="showPage('analysis')">User and Task Analysis</button>
-        <button onclick="showPage('evaluation')">Interface Evaluation</button>
-        <button onclick="showPage('design')">Design Proposals</button>
-        <button onclick="showPage('proto')">Prototype</button>
-        <button onclick="showPage('test')">User Tests</button>
-        <button onclick="showPage('reflect')">Reflections</button>
+      <button onclick="showPage('home')">Home</button>
+      <button onclick="showPage('intro')">Introduction</button>
+      <button onclick="showPage('analysis')">User and Task Analysis</button>
+      <button onclick="showPage('evaluation')">Interface Evaluation</button>
+      <button onclick="showPage('design')">Design Proposals</button>
+      <button onclick="showPage('proto')">Prototype</button>
+      <button onclick="showPage('test')">User Tests</button>
+      <button onclick="showPage('reflect')">Reflections</button>
     </div>
 
     <!-- Pages -->
     <div id="home" class="page">
-        <h1>Home</h1>
-        <p>Welcome to my project website.</p>
+      <h1>Home</h1>
+      <p>Welcome to my project website.</p>
     </div>
 
     <div id="intro" class="page">
-        <h1>Introduction</h1>
-        <p>My names Ruby Quigley. My projects about the "STARS" site. During my week one analysis and creation of flows as part of project work, I had to only create one flow diagram. I created one where it details the process of
-        . I created a flow detailing what caused the user to trigger this and what it looks like at the end. I included what action is using within the step of the flow and the systems response to the action.  The users goal
-        is explained with the pain point at said step being inlcluded to help with the research. My flow is important to the user as  it logs what the user is doing, why and how is it going wrong for the user. This is important 
-        as these all influence the experience the user has when interacting with the "STARS" site to upload.</p>
+      <h1>Introduction</h1>
+      <p>
+        My names Ruby Quigley. My projects about the "STARS" site. During my week one analysis and creation of flows as
+        part of project work, I had to only create one flow diagram. I created one where it details the process of . I
+        created a flow detailing what caused the user to trigger this and what it looks like at the end. I included what
+        action is using within the step of the flow and the systems response to the action. The users goal is explained
+        with the pain point at said step being inlcluded to help with the research. My flow is important to the user as
+        it logs what the user is doing, why and how is it going wrong for the user. This is important as these all
+        influence the experience the user has when interacting with the "STARS" site to upload.
+      </p>
     </div>
 
-<div id="analysis" class="page">
-  <h1>User and Task Analysis Flow</h1>
-  <p></p>
-  <table border="1" style="border-collapse: collapse; width: 60%">
-    <tbody>
-      <tr>
-        <th>Number</th>
-        <th>User Action</th>
-        <th>System Response</th>
-        <th>Users Goals</th>
-        <th>Pain Point</th>
-      </tr>
-      <tr></tr>
-      <tr>
-        <td>1</td>
-        <td>User opens the web page</td>
-        <td>Opens web page on the internalising page selection automatically</td>
-        <td>The user navigates selections to find on that's suitable to their needs</td>
-        <td>
-          The pain point here is there are confusing terms such as internalising and Gibbs. This will confuse and
-          frustrate a first time user as they will be stuck navigating through sections blindly with no knowledge of the
-          site until they find what they need.
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Navigate to the Drafting and Feed Back section- selecting go to my briefs</td>
-        <td>Opens web page on drafting and feedback and then opens my briefs page</td>
-        <td>To navigate to their briefs to select a brief for submission</td>
-        <td>
-          Drafting and submitting as a name is confusing for first time users, I was confused as I was looking for a
-          briefs, assignment or submission page
-        </td>
-      </tr>
-      <tr></tr>
-      <tr>
-        <td>3</td>
-        <td>Select a brief</td>
-        <td>A brief is selected, taking the user to the submissions page.</td>
-        <td>To select the desired brief in order to submit.</td>
-        <td>
-          The naming brief for assignments can be confusing for some users as some may not associate brief with
-          submission. The different versions for submissions is confusing for some users as its meant to mean multiple
-          submissions
-        </td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>View assignment</td>
-        <td>A check list of the assignment aspects and what’s needed in the submission.</td>
-        <td>Check the checklist in relation to the work they’ve done to proceed with submission process</td>
-        <td>
-          The pain point here is when you've completed the checklist there's no clear progression button, there's no
-          clear indication that you must click the next step section of the progression bar to be taken to the next
-          section of the submission process. In this case the next step would be "Create/edit my work".
-        </td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Create/edit my work</td>
-        <td>
-          Here the cover letter option will be selected and a selection of what to upload and its title will now appear
-          to be edited by the user.
-        </td>
-        <td>To include files and details for their submission to progress</td>
-        <td>
-          The pain point here being the naming of cover letter as leaving a note. A different name would be more
-          suitable to be understood by all users, such as "Note for Reviewer". There is a second pain point here, when
-          adding screenshots to the submission, the page begins to looked cramped and irritating. The title selection is
-          also confusing. A prompt of instructions would make it easier for the user. E.g. Tile : - Add a title to
-          header your work.
-        </td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Select Goals for Review</td>
-        <td>A check list is loaded to select what goals to review</td>
-        <td>To load the checklist for the user to select what will be reviewed</td>
-        <td>
-          The pain point here is the ability to write the cover letter in this section to skip when done, this can cause
-          a first time user to be confused and trying to go back through sections of the website leaving them frustrated
-        </td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>Self Review</td>
-        <td>
-          A compilation of the editing and what your uploading is shown, allowing the user to self-review and edit in
-          this section.
-        </td>
-        <td>
-          To load the users, work and progress, allowing them to review and edit. Letting them complete a checklist to
-          proceed
-        </td>
-        <td>
-          Depending on what the user has edited and uploaded this section can look squashed and formatted in a
-          non-appeasing way to a user. The self-review checklist down at the bottom can be deceiving as its not clearly
-          indicated that the user must check the boxes and make comments to pass to the next stage.
-        </td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>Request AI Feedback</td>
-        <td>
-          Keeps the same page as the self-review but instead of self-review complete t now shows ai feedback request as
-          a selection.
-        </td>
-        <td>Navigate the reviews in order to get AI feedback on what they submitted.</td>
-        <td>
-          The AI isn’t entirely accurate. The ability to see the AI’s review is difficult to find as it isn’t indicated
-          that you need to press get ai review, then when it’s got it displays review received. Its not indicated that
-          you need to click Review received by AI reviewer in order to see the review.
-        </td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>Submit Final</td>
-        <td>Keeps the same page as ai feedback but instead with a small section dedicated to submit final artefact.</td>
-        <td>To do their final progression and submit their final artefact and all its attachments</td>
-        <td>
-          Its difficult to see where you must submit the final artefact as a small section to do so is loaded underneath
-          all the work the user has done in the same page style as self-review and ai feedback. The submission is only a
-          small section with a button on the other side of the screen, making it harder to notice and see.
-        </td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-<p></p>
+    <div id="analysis" class="page">
+      <h1>User and Task Analysis Flow</h1>
+      <p></p>
+      <table border="1" style="border-collapse: collapse; width: 60%">
+        <tbody>
+          <tr>
+            <th>Number</th>
+            <th>User Action</th>
+            <th>System Response</th>
+            <th>Users Goals</th>
+            <th>Pain Point</th>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>1</td>
+            <td>User opens the web page</td>
+            <td>Opens web page on the internalising page selection automatically</td>
+            <td>The user navigates selections to find on that's suitable to their needs</td>
+            <td>
+              The pain point here is there are confusing terms such as internalising and Gibbs. This will confuse and
+              frustrate a first time user as they will be stuck navigating through sections blindly with no knowledge of
+              the site until they find what they need.
+            </td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Navigate to the Drafting and Feed Back section- selecting go to my briefs</td>
+            <td>Opens web page on drafting and feedback and then opens my briefs page</td>
+            <td>To navigate to their briefs to select a brief for submission</td>
+            <td>
+              Drafting and submitting as a name is confusing for first time users, I was confused as I was looking for a
+              briefs, assignment or submission page
+            </td>
+          </tr>
+          <tr></tr>
+          <tr>
+            <td>3</td>
+            <td>Select a brief</td>
+            <td>A brief is selected, taking the user to the submissions page.</td>
+            <td>To select the desired brief in order to submit.</td>
+            <td>
+              The naming brief for assignments can be confusing for some users as some may not associate brief with
+              submission. The different versions for submissions is confusing for some users as its meant to mean
+              multiple submissions
+            </td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>View assignment</td>
+            <td>A check list of the assignment aspects and what’s needed in the submission.</td>
+            <td>Check the checklist in relation to the work they’ve done to proceed with submission process</td>
+            <td>
+              The pain point here is when you've completed the checklist there's no clear progression button, there's no
+              clear indication that you must click the next step section of the progression bar to be taken to the next
+              section of the submission process. In this case the next step would be "Create/edit my work".
+            </td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Create/edit my work</td>
+            <td>
+              Here the cover letter option will be selected and a selection of what to upload and its title will now
+              appear to be edited by the user.
+            </td>
+            <td>To include files and details for their submission to progress</td>
+            <td>
+              The pain point here being the naming of cover letter as leaving a note. A different name would be more
+              suitable to be understood by all users, such as "Note for Reviewer". There is a second pain point here,
+              when adding screenshots to the submission, the page begins to looked cramped and irritating. The title
+              selection is also confusing. A prompt of instructions would make it easier for the user. E.g. Tile : - Add
+              a title to header your work.
+            </td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Select Goals for Review</td>
+            <td>A check list is loaded to select what goals to review</td>
+            <td>To load the checklist for the user to select what will be reviewed</td>
+            <td>
+              The pain point here is the ability to write the cover letter in this section to skip when done, this can
+              cause a first time user to be confused and trying to go back through sections of the website leaving them
+              frustrated
+            </td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Self Review</td>
+            <td>
+              A compilation of the editing and what your uploading is shown, allowing the user to self-review and edit
+              in this section.
+            </td>
+            <td>
+              To load the users, work and progress, allowing them to review and edit. Letting them complete a checklist
+              to proceed
+            </td>
+            <td>
+              Depending on what the user has edited and uploaded this section can look squashed and formatted in a
+              non-appeasing way to a user. The self-review checklist down at the bottom can be deceiving as its not
+              clearly indicated that the user must check the boxes and make comments to pass to the next stage.
+            </td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Request AI Feedback</td>
+            <td>
+              Keeps the same page as the self-review but instead of self-review complete t now shows ai feedback request
+              as a selection.
+            </td>
+            <td>Navigate the reviews in order to get AI feedback on what they submitted.</td>
+            <td>
+              The AI isn’t entirely accurate. The ability to see the AI’s review is difficult to find as it isn’t
+              indicated that you need to press get ai review, then when it’s got it displays review received. Its not
+              indicated that you need to click Review received by AI reviewer in order to see the review.
+            </td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Submit Final</td>
+            <td>
+              Keeps the same page as ai feedback but instead with a small section dedicated to submit final artefact.
+            </td>
+            <td>To do their final progression and submit their final artefact and all its attachments</td>
+            <td>
+              Its difficult to see where you must submit the final artefact as a small section to do so is loaded
+              underneath all the work the user has done in the same page style as self-review and ai feedback. The
+              submission is only a small section with a button on the other side of the screen, making it harder to
+              notice and see.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p></p>
 
-<h1>Pain Point Logs</h1>
-<p></p>
-<table border="1" style="border-collapse: collapse; width: 60%">
-  <tbody>
-    <tr>
-      <th>Number</th>
-      <th>Flow</th>
-      <th>Were in the flow</th>
-      <th>What Happended</th>
-      <th>Why is this a Problem</th>
-      <th>Severity</th>
-    </tr>
-    <tr></tr>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td>Selection 1</td>
-      <td>
-        I had tried to navigate the home page when I didn't know where to navigate as there were confusing terms I
-        didn't know. Internalising and Gibbs were the two main options to choose one. It took trial and error before
-        realising the Gibbs selection was right for me.
-      </td>
-      <td>
-        This is a problem because I spent awhile leaving the site and returning, clicking and rereading my notes for the
-        correct link. This was very confusing and somewhat frustrating.
-      </td>
-      <td>Medium</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>1</td>
-      <td>Selection 3</td>
-      <td>I was trying to select an assignment to upload when I was confused trying to navigate the Briefs menu.</td>
-      <td>
-        This is a problem as I was lost and looking for an assigments page. The layout of the briefs and the ability to
-        show you multiple submissions of the same work is a problem. It confuses users and makes navigating harder.
-      </td>
-      <td>Low</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>1</td>
-      <td>Selection 4</td>
-      <td>
-        Here I was trying to view my assignment and see what is needed for my submission. I was confused when I opended
-        the page as the layout is cluttered and unclear with little instructions. There was no inidcation that I was to
-        click on the progression bar to navigate to the next section.
-      </td>
-      <td>
-        This is an issue because it leaves users confused and aimlessly trying to navigate. It wastes time and can cause
-        human error. The layout will also just frustrate users who just want to navigate thier work.
-      </td>
-      <td>High</td>
-    </tr>
-  </tbody>
-</table>
+    <h1>Pain Point Logs</h1>
+    <p></p>
+    <table border="1" style="border-collapse: collapse; width: 60%">
+      <tbody>
+        <tr>
+          <th>Number</th>
+          <th>Flow</th>
+          <th>Were in the flow</th>
+          <th>What Happended</th>
+          <th>Why is this a Problem</th>
+          <th>Severity</th>
+        </tr>
+        <tr></tr>
+        <tr>
+          <td>1</td>
+          <td>1</td>
+          <td>Selection 1</td>
+          <td>
+            I had tried to navigate the home page when I didn't know where to navigate as there were confusing terms I
+            didn't know. Internalising and Gibbs were the two main options to choose one. It took trial and error before
+            realising the Gibbs selection was right for me.
+          </td>
+          <td>
+            This is a problem because I spent awhile leaving the site and returning, clicking and rereading my notes for
+            the correct link. This was very confusing and somewhat frustrating.
+          </td>
+          <td>Medium</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>1</td>
+          <td>Selection 3</td>
+          <td>
+            I was trying to select an assignment to upload when I was confused trying to navigate the Briefs menu.
+          </td>
+          <td>
+            This is a problem as I was lost and looking for an assigments page. The layout of the briefs and the ability
+            to show you multiple submissions of the same work is a problem. It confuses users and makes navigating
+            harder.
+          </td>
+          <td>Low</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>1</td>
+          <td>Selection 4</td>
+          <td>
+            Here I was trying to view my assignment and see what is needed for my submission. I was confused when I
+            opended the page as the layout is cluttered and unclear with little instructions. There was no inidcation
+            that I was to click on the progression bar to navigate to the next section.
+          </td>
+          <td>
+            This is an issue because it leaves users confused and aimlessly trying to navigate. It wastes time and can
+            cause human error. The layout will also just frustrate users who just want to navigate thier work.
+          </td>
+          <td>High</td>
+        </tr>
+      </tbody>
+    </table>
 
-<p></p>
-
+    <p></p>
 
     <div id="evaluation" class="page">
-        <h1>Interface Evaluation</h1>
-        <p>Information goes here.</p>
+      <h1>Interface Evaluation</h1>
+      <p>Information goes here.</p>
     </div>
 
     <div id="design" class="page">
-        <h1>Design Proposals</h1>
-        <p>Information goes here.</p>
+      <h1>Design Proposals</h1>
+      <p>Information goes here.</p>
     </div>
 
     <div id="proto" class="page">
-        <h1>Prototype</h1>
-        <p> Information goes here. </p>
+      <h1>Prototype</h1>
+      <p>Information goes here.</p>
     </div>
 
     <div id="test" class="page">
-        <h1>User Tests</h1>
-        <p>Information goes here.</p>
+      <h1>User Tests</h1>
+      <p>Information goes here.</p>
     </div>
 
     <div id="reflect" class="page">
-        <h1>Reflections</h1>
-        <p>Information goes here.</p>
+      <h1>Reflections</h1>
+      <p>Information goes here.</p>
     </div>
 
     <script>
-        function showPage(pageName) {
-            // hide all pages
-            document.getElementById("home").style.display = "none";
-            document.getElementById("intro").style.display = "none";
-            document.getElementById("analysis").style.display = "none";
-            document.getElementById("evaluation").style.display = "none";
-            document.getElementById("design").style.display = "none";
-            document.getElementById("proto").style.display = "none";
-            document.getElementById("test").style.display = "none";
-            document.getElementById("reflect").style.display = "none";
+      function showPage(pageName) {
+        // hide all pages
+        document.getElementById("home").style.display = "none";
+        document.getElementById("intro").style.display = "none";
+        document.getElementById("analysis").style.display = "none";
+        document.getElementById("evaluation").style.display = "none";
+        document.getElementById("design").style.display = "none";
+        document.getElementById("proto").style.display = "none";
+        document.getElementById("test").style.display = "none";
+        document.getElementById("reflect").style.display = "none";
 
-            // show the page we want
-            document.getElementById(pageName).style.display = "block";
-        }
+        // show the page we want
+        document.getElementById(pageName).style.display = "block";
+      }
     </script>
-
-</body>
+  </body>
 </html>
+
